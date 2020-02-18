@@ -52,7 +52,15 @@ end
 
 
 def reduce_to_all_true(source_array)
-  
+  values = True
+  i = 0
+  while i < source_array.count do
+    if source_array[i] == values
+      return source_array
+    end
+  i += 1
+  end
+  source_array
 end
 
 
